@@ -95,6 +95,12 @@ rm -rf /opt/jboss/keycloak/standalone/configuration/standalone_xml_history
 rm -rf /opt/jboss/keycloak/standalone/tmp/auth
 rm -rf /opt/jboss/keycloak/domain/tmp/auth
 
+#################
+# Setting Theme #
+#################
+
+mv /opt/dec-theme /opt/jboss/keycloak/themes/
+
 ###################
 # Set permissions #
 ###################

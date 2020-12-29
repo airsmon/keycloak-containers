@@ -1,0 +1,151 @@
+body {
+  padding:0;
+  margin:0;
+}
+#kc-header,
+header {
+  display: none;
+}
+#kc-content {
+  height: 100vh;
+}
+#kc-content-wrapper {
+  height: 100%;
+}
+.login-container {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  background: url(../img/loginbg@1x.jpg) repeat 0 0;
+  background-color: #2d3a4b;
+  background-size: 100% 100%;
+}
+.login-container .login-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 978px;
+  margin: 15% auto;
+}
+.login-container .login-image {
+  margin-top: 120px;
+  margin-right: 88px;
+  background-image: url(../img/login-image.svg);
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 346px;
+}
+.login-container .login-image .svg-icon {
+  width: 450px;
+  height: 346px;
+}
+.login-container .logo {
+  width: 108px;
+  height: 27px;
+  margin: 0 auto 24px;
+  background-image: url(../img/daocloud.svg);
+    background-repeat: no-repeat;
+}
+.login-container .logo .svg-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.login-container .login-box {
+  width: 360px;
+  height: auto;
+  padding: 30px 40px 34px;
+  background: #fff;
+  -webkit-box-shadow: 0 22px 60px 0 rgba(8,15,50,.12);
+  box-shadow: 0 22px 60px 0 rgba(8,15,50,.12);
+  border-radius: 6px;
+}
+
+.login-container .title-container {
+  margin-bottom: 50px;
+}
+.login-container .title1, .login-container .title2{
+  margin: 0 auto;
+  color: #3d444f;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
+  text-shadow: 0 22px 60px rgba(8,15,50,.12);
+}
+.login-container .title1{
+  width: 186px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.login-container .title2 {
+  width: 152px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+.login-container .login-box .login-form {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0;
+}
+.login-container .title-container {
+  margin-bottom: 50px;
+}
+.login-container .login-box .el-form-item {
+  margin-bottom: 20px;
+}
+
+.login-container .show-pwd {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #889aa4;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: url(../img/eye-close-line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+.login-container .show-pwd.close {
+  background-image: url(../img/eye-open.svg);
+}
+
+.login-container .login-box .login-submit {
+  width: 100%;
+  margin: 20px 0 30px;
+}
+
+
+
+
+.login-container .login-pb {
+  width: 360px;
+  height: 20px;
+  background-image: url(../img/login-pb.svg);
+  background-repeat: no-repeat;
+  margin: 44px auto;
+}
+.login-container .login-pb .svg-icon {
+  width: 100%;
+  height: 100%;
+}
+
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
