@@ -317,6 +317,38 @@ Enable _upload_script_ profile:
     docker run -e JAVA_OPTS_APPEND="-Dkeycloak.profile.feature.upload_script=enabled" jboss/keycloak
 
 
+## Keycloak Theme Setting
+
+将需要的主题添加到镜像中，Build镜像。
+1、修改Dockerfile
+```
+RUN microdnf update -y && microdnf install -y glibc-langpack-en gzip hostname java-11-openjdk-headless openssl tar which && microdnf clean all
+
+ADD dec-theme /opt/dec-theme       # ADD dec-theme主题到容器中，添加一个新镜像层
+
+ADD tools /opt/jboss/tools
+RUN /opt/jboss/tools/build-keycloak.sh
+```
+2、修改build-keycloak.sh
+```
+###########
+# Garbage #
+###########
+
+rm -rf /opt/jboss/keycloak/standalone/tmp/auth
+rm -rf /opt/jboss/keycloak/domain/tmp/auth
+
+#################
+# Setting Theme #
+#################
+
+mv /opt/dec-theme /opt/jboss/keycloak/themes/
+
+###################
+# Set permissions #
+###################
+```
+
 ## Clustering
 
 Replacing the default discovery protocols (`PING` for the UDP stack and `MPING` for the TCP one) can be achieved by defining
